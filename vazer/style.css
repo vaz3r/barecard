@@ -1,0 +1,456 @@
+body {
+    margin: 0;
+    background-color: #fafafa;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+}
+
+.barecard {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+
+/*================= INFO CARD =================*/
+
+.info-card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: white;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);     */
+}
+
+.card-image {
+    width: 100%;
+    background-color: #1e88e5;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+}
+
+.profile-img {
+    width: 100%;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+}
+
+.card-bar {
+    background-color: #00000059;
+    height: 23%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.lay-1 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 0 0 3%;
+}
+
+.lay-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.name-layer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.svg-check {
+    width: 7%;
+    height: 30%;
+    position: relative;
+    left: 2%;
+    top: 8px;
+}
+
+.full-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.9em;
+    font-weight: 300;
+    color: white;
+}
+
+.job-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: white;
+}
+
+.bare-action {
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bare-action:hover {
+    opacity: 0.7;
+}
+
+.action-icon-setting {
+    font-size: 2.2em;
+    color: #1e88e5;
+}
+
+
+/*================= SOCIAL CARD =================*/
+
+.social-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background-color: #1e88e5;
+    padding: 3% 0 3% 0;
+}
+
+.col-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 4%;
+    background-color: #1776ca;
+    margin: 1.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.circle:hover {
+    opacity: 0.5;
+}
+
+.icon-setting {
+    font-size: 2.2em;
+    color: white;
+}
+
+
+/*================= EXTRA CARD =================*/
+
+.extra-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.extra-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background-color: white;
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);         */
+    margin-top: 2%;
+    padding: 0;
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0.03); */
+}
+
+.available {
+    border-right: #1e88e5;
+    border-right-width: 3px;
+    border-right-style: solid;
+}
+
+.extra-icon {
+    border-radius: 0;
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #1e88e5;
+}
+
+.text-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 4%;
+    width: 75%;
+}
+
+.location-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #737373;
+}
+
+
+/*================= QR CODE CARD =================*/
+
+.qr-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: white;
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);         */
+    margin-top: 2%;
+    padding: 0;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0.03);
+}
+
+.button {
+    background-color: #1776ca;
+    height: 11%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.button-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: white;
+}
+
+
+/*============== TOOLTIPING =============*/
+
+[tooltip] {
+    position: relative;
+}
+
+[tooltip]::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-width: 4px 6px 0 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+    z-index: 99;
+    opacity: 0;
+}
+
+[tooltip-position='left']::before {
+    left: 0%;
+    top: 50%;
+    margin-left: -12px;
+    -webkit-transform: translatey(-50%) rotate(-90deg);
+    transform: translatey(-50%) rotate(-90deg)
+}
+
+[tooltip-position='top']::before {
+    left: 50%;
+}
+
+[tooltip-position='buttom']::before {
+    top: 100%;
+    margin-top: 8px;
+    -webkit-transform: translateX(-50%) translatey(-100%) rotate(-180deg);
+    transform: translateX(-50%) translatey(-100%) rotate(-180deg)
+}
+
+[tooltip-position='right']::before {
+    left: 100%;
+    top: 50%;
+    margin-left: 1px;
+    -webkit-transform: translatey(-50%) rotate(90deg);
+    transform: translatey(-50%) rotate(90deg)
+}
+
+[tooltip]::after {
+    content: attr(tooltip);
+    position: absolute;
+    left: 50%;
+    top: -6px;
+    -webkit-transform: translateX(-50%) translateY(-100%);
+    transform: translateX(-50%) translateY(-100%);
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: white;
+    padding: 4px 2px;
+    /* font-size: 17px; */
+    /* min-width: 80px; */
+    border-radius: 5px;
+    pointer-events: none;
+    padding: 4px 4px;
+    z-index: 99;
+    opacity: 0;
+}
+
+[tooltip-position='left']::after {
+    left: 0%;
+    top: 50%;
+    margin-left: -8px;
+    -webkit-transform: translateX(-100%) translateY(-50%);
+    transform: translateX(-100%) translateY(-50%);
+}
+
+[tooltip-position='top']::after {
+    left: 50%;
+}
+
+[tooltip-position='buttom']::after {
+    top: 100%;
+    margin-top: 8px;
+    -webkit-transform: translateX(-50%) translateY(0%);
+    transform: translateX(-50%) translateY(0%);
+}
+
+[tooltip-position='right']::after {
+    left: 100%;
+    top: 50%;
+    margin-left: 8px;
+    -webkit-transform: translateX(0%) translateY(-50%);
+    transform: translateX(0%) translateY(-50%);
+}
+
+[tooltip]:hover::after,
+[tooltip]:hover::before {
+    opacity: 1
+}
