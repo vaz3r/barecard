@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #fafafa;
+    background-color: #FAFAFA;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -26,6 +26,10 @@ body {
     margin-top: 2%;
 }
 
+.barecard:hover {
+    /* transform: translateY(-2px); */
+}
+
 
 /*================= INFO CARD =================*/
 
@@ -47,14 +51,14 @@ body {
 .card-image {
     width: 100%;
     background-color: #1e88e5;
-    border-top-left-radius: 1%;
-    border-top-right-radius: 1%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .profile-img {
     width: 100%;
-    border-top-left-radius: 1%;
-    border-top-right-radius: 1%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .card-bar {
@@ -227,6 +231,7 @@ body {
 /*================= EXTRA CARD =================*/
 
 .extra-cards {
+    background-color: #1e88e5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -236,9 +241,12 @@ body {
     flex-direction: column;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    padding-bottom: 4%;
 }
 
 .extra-card {
+    padding: 0 3% 0 3%;
+    border-radius: 3px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -248,10 +256,8 @@ body {
     flex-direction: row;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    background-color: white;
     /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);         */
     margin-top: 2%;
-    padding: 0;
     /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0.03); */
 }
 
@@ -262,7 +268,8 @@ body {
 }
 
 .extra-icon {
-    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     margin: 0;
     width: 80px;
     height: 80px;
@@ -276,7 +283,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
-    background-color: #1e88e5;
+    background-color: #1776ca;
 }
 
 .text-holder {
@@ -289,8 +296,11 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 4%;
-    width: 75%;
+    padding-left: 3%;
+    width: 80%;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: white;
 }
 
 .location-text {
@@ -339,6 +349,8 @@ body {
     justify-content: center;
     margin-bottom: 5%;
     cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .button:hover {
@@ -350,6 +362,13 @@ body {
     font-size: 1.4em;
     font-weight: 600;
     color: white;
+}
+
+
+/* DISPLAY SETTINGS */
+
+.hidden {
+    display: none;
 }
 
 
@@ -453,4 +472,12 @@ body {
 [tooltip]:hover::after,
 [tooltip]:hover::before {
     opacity: 1
+}
+
+.map-wrapper {
+    border-radius: 4px;
+    margin-top: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 4px;
 }

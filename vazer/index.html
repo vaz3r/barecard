@@ -3,6 +3,7 @@
 <head>
     <title>Barecard</title>
     <link rel='stylesheet' href='style.css' type='text/css'>
+    <!-- <link rel='stylesheet' href='styles.min.css' type='text/css'> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
     <div class="barecard">
         <div class="info-card">
             <div class="card-image">
-                <img class="profile-img" alt="Profile Picture" src="pic.jpg" />
+                <img class="profile-img" alt="Profile Picture" src="pic2.jpg" />
             </div>
             <div class="card-bar">
                 <div class="lay-1">
@@ -44,52 +45,54 @@
                 <div id="_mail" data-value="vazer.dpr@gmail.com" class="circle" tooltip="Mail" tooltip-position="top">
                     <i class="icon-setting icon ion-email"></i>
                 </div>
-                <div class="circle" tooltip="Website" tooltip-position="top">
+                <div id="_website" data-value="http://xtested.com" class="circle" tooltip="Website" tooltip-position="top">
                     <i class="icon-setting icon ion-android-globe"></i>
                 </div>
-                <div class="circle" tooltip="Linkedin" tooltip-position="top">
+                <div id="_linkedin" data-value="vazer-rahmani-39b7299b" class="circle" tooltip="Linkedin" tooltip-position="top">
                     <i class="icon-setting icon ion-social-linkedin"></i>
                 </div>
-                <div class="circle" tooltip="Twitter" tooltip-position="top">
+                <div id="_twitter" data-value="vazerme" class="circle" tooltip="Twitter" tooltip-position="top">
                     <i class="icon-setting icon ion-social-twitter"></i>
                 </div>
-                <div class="circle" tooltip="Facebook" tooltip-position="top">
+                <div id="_facebook" data-value="mevazer" class="circle" tooltip="Facebook" tooltip-position="top">
                     <i class="icon-setting icon ion-social-facebook"></i>
                 </div>
-                <div class="circle" tooltip="Google+" tooltip-position="top">
+                <div id="_googleplus" data-value="https://plus.google.com/u/0/+VazerRahmani" class="circle" tooltip="Google+" tooltip-position="top">
                     <i class="icon-setting icon ion-social-googleplus"></i>
                 </div>
-                <div class="circle" tooltip="Skype" tooltip-position="top">
+                <div id="_skype" data-value="vazer.exe" class="circle" tooltip="Skype" tooltip-position="top">
                     <i class="icon-setting icon ion-social-skype"></i>
                 </div>
-                <div class="circle" tooltip="Snapchat" tooltip-position="top">
+                <div id="_snapchat" data-value="joshconstine" class="circle hidden" tooltip="Snapchat" tooltip-position="top">
                     <i class="icon-setting icon ion-social-snapchat"></i>
                 </div>
-                <div class="circle" tooltip="Whatsapp" tooltip-position="top">
+                <div id="_whatsapp" data-value="+213540215539" class="circle" tooltip="Whatsapp" tooltip-position="top">
                     <i class="icon-setting icon ion-social-whatsapp"></i>
                 </div>
-                <div class="circle" tooltip="Instagram" tooltip-position="top">
+                <div id="_instagram" data-value="vazer.me" class="circle" tooltip="Instagram" tooltip-position="top">
                     <i class="icon-setting icon ion-social-instagram"></i>
                 </div>
-                <div class="circle" tooltip="Pinterest" tooltip-position="top">
+                <div id="_pinterest" data-value="mevazer" class="circle" tooltip="Pinterest" tooltip-position="top">
                     <i class="icon-setting icon ion-social-pinterest"></i>
                 </div>
-                <div class="circle" tooltip="Youtube" tooltip-position="top">
+                <div id="_youtube" data-value="https://www.youtube.com/channel/UCqLZB_RCoyaCfMT99ikf2Nw" class="circle" tooltip="Youtube"
+                    tooltip-position="top">
                     <i class="icon-setting icon ion-social-youtube"></i>
                 </div>
-                <div class="circle" tooltip="Github" tooltip-position="top">
+                <div id="_github" data-value="https://github.com/vaz3r" class="circle" tooltip="Github" tooltip-position="top">
                     <i class="icon-setting icon ion-social-github"></i>
                 </div>
-                <div class="circle" tooltip="Wordpress" tooltip-position="top">
-                    <i class="icon-setting icon ion-social-wordpress"></i>
+                <div id="_navigate" data-value="Sidi+Rached,+Tipaza" class="circle" tooltip="Navigate" tooltip-position="top">
+                    <i class="icon-setting icon ion-navigate"></i>
                 </div>
-                <div class="circle" tooltip="QR Code" tooltip-position="top">
+                <div class="circle hidden" tooltip="QR Code" tooltip-position="top">
                     <i class="icon-setting icon ion-ios-barcode-outline"></i>
                 </div>
-                <div class="circle" tooltip="Download vCard" tooltip-position="top">
+                <div id="_vcard" class="circle" tooltip="Download vCard" tooltip-position="top">
+                    <a download="user-vcard.vcard" id="_downloadlauncher" style="display: none"></a>
                     <i class="icon-setting icon ion-ios-cloud-download"></i>
                 </div>
-                <div class="circle" tooltip="Send SMS" tooltip-position="top">
+                <div id="_sms" data-value="+213540215539" class="circle" tooltip="Send SMS" tooltip-position="top">
                     <i class="icon-setting icon ion-android-textsms"></i>
                 </div>
             </div>
@@ -103,14 +106,6 @@
                 <div class="text-holder">
                     <a class="location-text">Available
                         <br>8AM-11PM (Sun - Thu)</a>
-                </div>
-            </div>
-            <div class="extra-card">
-                <div class="extra-icon">
-                    <i class="icon-setting icon ion-location"></i>
-                </div>
-                <div class="text-holder">
-                    <a class="location-text">Sidi Rached, Tipaza, DZ</a>
                 </div>
             </div>
 
@@ -156,6 +151,21 @@
                     <a class="location-text">Carnegie Mellon University</a>
                 </div>
             </div>
+
+            <div class="extra-card">
+                <div class="extra-icon">
+                    <i class="icon-setting icon ion-location"></i>
+                </div>
+                <div class="text-holder">
+                    <a class="location-text">Sidi Rached, Tipaza, DZ</a>
+                </div>
+            </div>
+
+            <div class="map-wrapper">
+                <iframe frameborder="0" style="height: auto; width: 100%; border-radius: 4px;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDIJ9XX2ZvRKCJcFRrl-lRanEtFUow4piM&q=Sidi+Rached,%20Tipaza">
+                </iframe>
+            </div>
+
         </div>
 
         <div id="details-button" class="button">
