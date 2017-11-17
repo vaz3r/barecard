@@ -85,20 +85,28 @@
                 <div id="_navigate" data-value="Sidi+Rached,+Tipaza" class="circle" tooltip="Navigate" tooltip-position="top">
                     <i class="icon-setting icon ion-navigate"></i>
                 </div>
-                <div class="circle hidden" tooltip="QR Code" tooltip-position="top">
+                <div id="_sms" data-value="+213540215539" class="circle" tooltip="Send SMS" tooltip-position="top">
+                    <i class="icon-setting icon ion-android-textsms"></i>
+                </div>
+                <div class="circle" tooltip="QR Code" tooltip-position="top">
                     <i class="icon-setting icon ion-ios-barcode-outline"></i>
                 </div>
                 <div id="_vcard" class="circle" tooltip="Download vCard" tooltip-position="top">
                     <a download="user-vcard.vcard" id="_downloadlauncher" style="display: none"></a>
                     <i class="icon-setting icon ion-ios-cloud-download"></i>
                 </div>
-                <div id="_sms" data-value="+213540215539" class="circle" tooltip="Send SMS" tooltip-position="top">
-                    <i class="icon-setting icon ion-android-textsms"></i>
-                </div>
             </div>
         </div>
 
         <div id="extra-cards" class="extra-cards">
+            <div class="extra-card hidden">
+                <div class="extra-icon">
+                    <i class="icon-setting icon ion-android-wifi"></i>
+                </div>
+                <div class="text-holder">
+                    <a class="location-text">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</a>
+                </div>
+            </div>
             <div class="extra-card">
                 <div class="extra-icon">
                     <i class="icon-setting icon ion-android-radio-button-on"></i>
@@ -166,14 +174,8 @@
         </div>
 
         <div id="details-button" class="button">
-            <!-- <i id="" class="icon-setting icon ion-chevron-down"></i> -->
             <a id="details-text" class="button-text">VIEW DETAILS</a>
         </div>
-
-        <!-- <div class="qr-card">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=dataasdaskddddddsdasddddddddddddasdasasdadasdasdasdasdasfafsdgsgsfgfsgsgsgsdgsdgsdgsdgsdgddddddadasdas"/>
-        </div> -->
-
     </div>
 </body>
 <script src="core.js" async></script>
