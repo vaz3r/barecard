@@ -26,10 +26,6 @@ body {
     margin-top: 2%;
 }
 
-.barecard:hover {
-    /* transform: translateY(-2px); */
-}
-
 
 /*================= INFO CARD =================*/
 
@@ -45,7 +41,6 @@ body {
     background-color: white;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);     */
 }
 
 .card-image {
@@ -120,11 +115,11 @@ body {
 }
 
 .svg-check {
-    width: 7%;
-    height: 30%;
     position: relative;
     left: 2%;
     top: 8px;
+    font-size: 2em;
+    color: white;
 }
 
 .full-name {
@@ -159,7 +154,7 @@ body {
 }
 
 .bare-action:hover {
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .action-icon-setting {
@@ -257,17 +252,11 @@ body {
     flex-direction: row;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);         */
     margin-top: 2%;
-    /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0.03); */
 }
+
 .extra-card:hover {
     opacity: 0.98;
-}
-.available {
-    border-right: #1e88e5;
-    border-right-width: 3px;
-    border-right-style: solid;
 }
 
 .extra-icon {
@@ -314,25 +303,6 @@ body {
     word-wrap: break-word;
     overflow: hidden;
     margin-left: 3%;
-}
-
-
-/*================= QR CODE CARD =================*/
-
-.qr-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    background-color: white;
-    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);         */
-    margin-top: 2%;
-    padding: 0;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0.03);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0.03);
 }
 
 .button {
@@ -398,31 +368,8 @@ body {
     opacity: 0;
 }
 
-[tooltip-position='left']::before {
-    left: 0%;
-    top: 50%;
-    margin-left: -12px;
-    -webkit-transform: translatey(-50%) rotate(-90deg);
-    transform: translatey(-50%) rotate(-90deg)
-}
-
 [tooltip-position='top']::before {
     left: 50%;
-}
-
-[tooltip-position='buttom']::before {
-    top: 100%;
-    margin-top: 8px;
-    -webkit-transform: translateX(-50%) translatey(-100%) rotate(-180deg);
-    transform: translateX(-50%) translatey(-100%) rotate(-180deg)
-}
-
-[tooltip-position='right']::before {
-    left: 100%;
-    top: 50%;
-    margin-left: 1px;
-    -webkit-transform: translatey(-50%) rotate(90deg);
-    transform: translatey(-50%) rotate(90deg)
 }
 
 [tooltip]::after {
@@ -448,31 +395,8 @@ body {
     opacity: 0;
 }
 
-[tooltip-position='left']::after {
-    left: 0%;
-    top: 50%;
-    margin-left: -8px;
-    -webkit-transform: translateX(-100%) translateY(-50%);
-    transform: translateX(-100%) translateY(-50%);
-}
-
 [tooltip-position='top']::after {
     left: 50%;
-}
-
-[tooltip-position='buttom']::after {
-    top: 100%;
-    margin-top: 8px;
-    -webkit-transform: translateX(-50%) translateY(0%);
-    transform: translateX(-50%) translateY(0%);
-}
-
-[tooltip-position='right']::after {
-    left: 100%;
-    top: 50%;
-    margin-left: 8px;
-    -webkit-transform: translateX(0%) translateY(-50%);
-    transform: translateX(0%) translateY(-50%);
 }
 
 [tooltip]:hover::after,
@@ -489,22 +413,30 @@ body {
 }
 
 .tags-cloud {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-left: 3%;
     margin-right: 4%;
     margin-top: 4%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 90%;
 }
 
 .tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     background-color: #1776ca;
     padding: 2% 2% 2% 2%;
-    /* margin-right: 2%; */
     margin-bottom: 2%;
     border-radius: 3px;
     cursor: pointer;
@@ -519,6 +451,7 @@ body {
     font-size: 1.1em;
     font-weight: 300;
     color: white;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     overflow: hidden;
     word-break: break-word;
