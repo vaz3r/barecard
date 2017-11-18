@@ -241,7 +241,8 @@ body {
     flex-direction: column;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    padding-bottom: 4%;
+    padding-bottom: 3%;
+    width: 100%;
 }
 
 .extra-card {
@@ -298,11 +299,11 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-left: 3%;
     width: 80%;
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
     background-color: white;
+    cursor: pointer;
 }
 
 .location-text {
@@ -310,6 +311,9 @@ body {
     font-size: 1.2em;
     font-weight: 400;
     color: #737373;
+    word-wrap: break-word;
+    overflow: hidden;
+    margin-left: 3%;
 }
 
 
@@ -480,18 +484,19 @@ body {
     border-radius: 4px;
     margin-top: 4%;
     padding-left: 3%;
-    padding-right: 3%;
+    padding-right: 4%;
     border-radius: 4px;
 }
 
 .tags-cloud {
     display: flex;
-    flex-direction: row;
     flex-shrink: 0;
     flex-wrap: wrap;
-    padding: 0 3% 0 3%;
+    margin-left: 3%;
+    margin-right: 4%;
     margin-top: 4%;
-    justify-content: flex-start;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .tag {
@@ -499,11 +504,9 @@ body {
     flex-shrink: 0;
     background-color: #1776ca;
     padding: 2% 2% 2% 2%;
-    margin-right: 2%;
+    /* margin-right: 2%; */
     margin-bottom: 2%;
     border-radius: 3px;
-    /* text-overflow: ellipsis;
-    overflow: hidden; */
     cursor: pointer;
 }
 
@@ -517,4 +520,7 @@ body {
     font-weight: 300;
     color: white;
     flex-shrink: 0;
+    overflow: hidden;
+    word-break: break-word;
+    word-wrap: break-word;
 }

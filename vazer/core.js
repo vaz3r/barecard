@@ -3,6 +3,7 @@ window.onload = function (e) {
     var extra_cards = document.getElementById("extra-cards");
     var details_button = document.getElementById("details-button");
     var details_text = document.getElementById("details-text");
+    var _tagscloud = document.getElementById("_tagscloud");
 
     extra_cards.style.display = "none";
 
@@ -36,7 +37,9 @@ window.onload = function (e) {
     var _vcard = document.getElementById("_vcard");
     var _sms = document.getElementById("_sms");
     var _map = document.getElementById("_map");
+    var _bitcoin = document.getElementById("_bitcoin");
 
+    
     _call.onclick = function () {
         document.location.href = "tel:" + _call.getAttribute("data-value");
         console.log("tel:" + _call.getAttribute("data-value"));
@@ -117,6 +120,10 @@ window.onload = function (e) {
         console.log("_sms:" + _sms.getAttribute("data-value"));
     };
 
+    _bitcoin.onclick = function () {
+        document.location.href = "bitcoin:" + _bitcoin.getAttribute("data-value");
+        console.log("_bitcoin:" + _bitcoin.getAttribute("data-value"));
+    };
     _vcard.onclick = function () {
         var _downloadlauncher = document.getElementById('_downloadlauncher');
         _downloadlauncher.href = buildCard("Vazer Rahmani");
