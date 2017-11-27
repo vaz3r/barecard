@@ -146,6 +146,6 @@ window.onload = function (e) {
             return textFile;
         };
 
-        _map.innerHTML = '<iframe frameborder="0" style="height: auto; width: 100%; border-radius: 4px;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD5F_cfGg033cHL4RxqqVc_cuBIUUkZyZ8&q=Sidi+Rached,%20Tipaza"></iframe>';
+        _map.innerHTML = '<iframe frameborder="0" style="height: auto; width: 100%; border-radius: 4px;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD5F_cfGg033cHL4RxqqVc_cuBIUUkZyZ8&q=' + _navigate.getAttribute("data-value").replace(" ", "%20")+'"></iframe>';
 
 };

@@ -1,0 +1,198 @@
+<html lang="en">
+    
+    <head>
+        <title>Barecard</title>
+        <link rel='stylesheet' href='style.css' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div class="barecard">
+            <div class="info-card">
+                <div class="card-image">
+                    <img class="profile-img" alt="Profile Picture" src="{{ user.picture }}" />
+                </div>
+                <div class="card-bar">
+                    <div class="lay-1">
+                        <div class="name-layer">
+                            <a class="full-name">{{ user.full_name }}</a>
+                            <i class="svg-check icon ion-ios-checkmark"></i>
+                        </div>
+                        <a class="job-title">{{ user.job_title }}</a>
+                    </div>
+                    <div class="lay-2">
+                        <div class="bare-action" tooltip="Add to Contacts" tooltip-position="top">
+                            <i class="action-icon-setting icon ion-plus-round"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="social-card">
+                <div class="col-1">
+                    <div id="_call" data-value="{{ user.phone_number }}" class="circle" tooltip="Call" tooltip-position="top">
+                        <i class="icon-setting icon ion-android-call"></i>
+                    </div>
+                    <div id="_mail" data-value="{{ user.email }}" class="circle" tooltip="Mail" tooltip-position="top">
+                        <i class="icon-setting icon ion-email"></i>
+                    </div>
+                    <div id="_website" data-value="{{ user.website }}" class="circle" tooltip="Website" tooltip-position="top">
+                        <i class="icon-setting icon ion-android-globe"></i>
+                    </div>
+                    <div id="_linkedin" data-value="{{ user.linkedin }}" class="circle" tooltip="Linkedin" tooltip-position="top">
+                        <i class="icon-setting icon ion-social-linkedin"></i>
+                    </div>
+                    <div id="_twitter" data-value="{{ user.twitter }}" class="circle" tooltip="Twitter" tooltip-position="top">
+                        <i class="icon-setting icon ion-social-twitter"></i>
+                    </div>
+                    <div id="_facebook" data-value="{{ user.facebook }}" class="circle" tooltip="Facebook" tooltip-position="top">
+                        <i class="icon-setting icon ion-social-facebook"></i>
+                    </div>
+                    <div id="_googleplus" data-value="{{ user.googleplus }}" class="circle" tooltip="Google+" tooltip-position="top">
+                        <i class="icon-setting icon ion-social-googleplus"></i>
+                    </div>
+                    <div id="_skype" data-value="{{ user.skype }}" class="circle" tooltip="Skype" tooltip-position="top">
+                        <i class="icon-setting icon ion-social-skype"></i>
+                    </div>
+                    <div id="_snapchat" data-value="{{ user.snapchat }}" class="circle hidden" tooltip="Snapchat" tooltip-position="top">
+                        <i class="icon-setting icon ion-social-snapchat"></i>
+                    </div>
+                    <div id="_whatsapp" data-value="{{ user.whatsapp }}" class="circle" tooltip="Whatsapp" tooltip-position="top">
+                        <i class="icon-setting icon ion-social-whatsapp"></i>
+                    </div>
+                    <div id="_instagram" data-value="{{ user.instagram }}" class="circle" tooltip="Instagram" tooltip-position="top">
+                        <i class="icon-setting icon ion-social-instagram"></i>
+                    </div>
+                    <div id="_pinterest" data-value="{{ user.pinterest }}" class="circle" tooltip="Pinterest" tooltip-position="top">
+                        <i class="icon-setting icon ion-social-pinterest"></i>
+                    </div>
+                    <div id="_youtube" data-value="{{ user.youtube }}" class="circle" tooltip="Youtube"
+                        tooltip-position="top">
+                        <i class="icon-setting icon ion-social-youtube"></i>
+                    </div>
+                    <div id="_github" data-value="{{ user.github }}" class="circle" tooltip="Github" tooltip-position="top">
+                        <i class="icon-setting icon ion-social-github"></i>
+                    </div>
+                    <div id="_navigate" data-value="{{ user.location }}" class="circle" tooltip="Navigate" tooltip-position="top">
+                        <i class="icon-setting icon ion-navigate"></i>
+                    </div>
+                    <div id="_sms" data-value="{{ user.phone_number }}" class="circle" tooltip="Send SMS" tooltip-position="top">
+                        <i class="icon-setting icon ion-android-textsms"></i>
+                    </div>
+                    <div id="_bitcoin" data-value="{{ user.bitcoin }}" class="circle" tooltip="Send Bitcoin" tooltip-position="top">
+                        <i class="icon-setting icon ion-social-bitcoin-outline"></i>
+                    </div>
+                    <div class="circle" tooltip="QR Code" tooltip-position="top">
+                        <i class="icon-setting icon ion-ios-barcode-outline"></i>
+                    </div>
+                    <div id="_vcard" class="circle" tooltip="Download vCard" tooltip-position="top">
+                        <a download="user-vcard.vcard" id="_downloadlauncher" style="display: none"></a>
+                        <i class="icon-setting icon ion-ios-cloud-download"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="extra-cards" class="extra-cards">
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i class="icon-setting icon ion-android-calendar"></i>
+                    </div>
+                    <div class="text-holder">
+                        <a class="location-text">{{ user.availability }}
+                            <br>{{ user.availability_timeline }}</a>
+                    </div>
+                </div>
+    
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i class="icon-setting icon ion-android-call"></i>
+                    </div>
+                    <div class="text-holder">
+                        <a class="location-text">{{ user.phone_number }}</a>
+                    </div>
+                </div>
+    
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i class="icon-setting icon ion-ios-briefcase"></i>
+                    </div>
+                    <div class="text-holder">
+                        <a class="location-text">{{ user.second_phone }}</a>
+                    </div>
+                </div>
+    
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i class="icon-setting icon ion-ios-email"></i>
+                    </div>
+                    <div class="text-holder">
+                        <a class="location-text">{{ user.email }}</a>
+                    </div>
+                </div>
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i class="icon-setting icon ion-android-globe"></i>
+                    </div>
+                    <div class="text-holder">
+                        <a class="location-text">{{ user.website }}</a>
+                    </div>
+                </div>
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i class="icon-setting icon ion-university"></i>
+                    </div>
+                    <div class="text-holder">
+                        <a class="location-text">{{ user.education }}</a>
+                    </div>
+                </div>
+    
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i class="icon-setting icon ion-social-bitcoin"></i>
+                    </div>
+                    <div class="text-holder">
+                        <a class="location-text">{{ user.bitcoin }}</a>
+                    </div>
+                </div>
+    
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i class="icon-setting icon ion-location"></i>
+                    </div>
+                    <div class="text-holder">
+                        <a class="location-text">{{ user.location }}a</a>
+                    </div>
+                </div>
+    
+                <div id="_map" class="map-wrapper"></div>
+    
+                <div id="_tagscloud" class="tags-cloud">
+                    <div class="tag">
+                        <a class="tag-text">#{{ user.tag_1 }}</a>
+                    </div>
+                    <div class="tag">
+                        <a class="tag-text">#{{ user.tag_2 }}</a>
+                    </div>
+                    <div class="tag">
+                        <a class="tag-text">#{{ user.tag_3 }}</a>
+                    </div>
+                    <div class="tag">
+                        <a class="tag-text">#{{ user.tag_4 }}</a>
+                    </div>
+                    <div class="tag">
+                        <a class="tag-text">#{{ user.tag_5 }}</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div id="details-button" class="button">
+                <a id="details-text" class="button-text">VIEW DETAILS</a>
+            </div>
+        </div>
+    </body>
+    <script src="core.js" async></script>
+    
+    </html>
